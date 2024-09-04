@@ -3,7 +3,7 @@ package main
 import "log"
 
 func main() {
-	log.Println(plusOne([]int{9}))
+	log.Println(plusOne([]int{9, 9}))
 }
 
 func plusOne(digits []int) []int {
