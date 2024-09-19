@@ -1,4 +1,4 @@
 # leet-code-tasks
-Repository with solutions to problems from the site leetcode
+Repository with solutions of problems from leetcode
 # my leet-code 
 ```https://leetcode.com/igorok-follow/```
