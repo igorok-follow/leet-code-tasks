@@ -9,8 +9,20 @@ func main() {
 	t := time.Now()
 	log.Println(inorderTraversal(
 		&TreeNode{
-			Val:  1,
-			Left: nil,
+			Val: 1,
+			Left: &TreeNode{
+				Val: 5,
+				Left: &TreeNode{
+					Val:  6,
+					Left: nil,
+					Right: &TreeNode{
+						Val:   10,
+						Left:  nil,
+						Right: nil,
+					},
+				},
+				Right: nil,
+			},
 			Right: &TreeNode{
 				Val: 2,
 				Left: &TreeNode{
