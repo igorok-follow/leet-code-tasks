@@ -2,10 +2,18 @@ package main
 
 import (
 	"log"
+	"math"
 	"sort"
+	"strconv"
+	"strings"
 )
 
 func main() {
+	s := "asd"
+	for i := 0; i < len(s); i++ {
+		asd := strings.ToUpper(string(s[i]))
+	}
+
 	log.Println(findContentChildren([]int{1, 2, 3}, []int{3}))
 }
 
@@ -25,4 +33,23 @@ func findContentChildren(g []int, s []int) int {
 	}
 
 	return count
+}
+
+func constructRectangle(area int) []int {
+	strconv.Itoa()
+	i := int(math.Sqrt(float64(area)))
+	for ; i <= area; i++ {
+		if area%i == 0 {
+			return max(i, area/i)
+		}
+	}
+
+	return nil
+}
+
+func max(x, y int) []int {
+	if x > y {
+		return []int{x, y}
+	}
+	return []int{y, x}
 }
